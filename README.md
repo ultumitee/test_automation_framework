@@ -30,11 +30,16 @@ pip install requirements.txt
 EMAIL: Enter Email Address Here
 PASSWORD: Enter Password Here
 ```
-* After updating the configuration, you can execute below command to run the tests
+* After updating the configuration, you can execute below command to run the UI tests
 
 ```bash
-pytest --browser chrome --html=report/report.html
+pytest tests/test_trendyol_ui.py --browser chrome --html=report/report.html
 ```
 You can use Chrome, Firefox, Internet Explorer, Edge or Opera browsers in browser parameter
+
+* To run the api tests, you can execute the command below
+```bash
+pytest tests/test_api.py --html=report/report.html
+```
 
 After the execution, it generates an HTML report and adds a screenshot of the last state in report folder
