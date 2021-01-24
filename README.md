@@ -21,7 +21,7 @@ To be able to run this tool, Python 3.X is required
 
 ```bash
 git clone https://github.com/ultumitee/test_automation_framework.git
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
