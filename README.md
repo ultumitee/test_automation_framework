@@ -7,7 +7,7 @@ This is an automation suite which tests below requirements for Trendyol web page
 * Navigate to a product detail
 * Add the product to basket and verify if added
 
-This tool is developed with Python and uses pytest framework for testing execution
+This tool is developed with **Python** and uses **pytest framework** for test execution and reporting
 
 ## Dependency
 
