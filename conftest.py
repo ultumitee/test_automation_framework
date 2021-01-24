@@ -1,5 +1,6 @@
 import sys
 
+import yaml
 import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -46,3 +47,11 @@ def browser(request):
 
     request.addfinalizer(kill_browser)
     return driver
+
+@pytest.fixture(scope="module")
+def user_data(request):
+    with open(r'user_info.yaml') as file:
+        # The FullLoader parameter handles the conversion from YAML
+        # scalar values to Python the dictionary format
+        user_info = yaml.load(file, Loader=yaml.FullLoader)
+        return user_info

@@ -13,7 +13,6 @@ class BasePage(object):
         self.driver = driver
         self.timeout = 30
         self.driver.implicitly_wait(self.timeout)
-        self.driver.get("https://www.trendyol.com/")
 
     # this function performs click on web element whose locator is passed to it.
     def click(self, by_locator):
