@@ -7,3 +7,4 @@ class MAIN_PAGE_LOCATORS(object):
     BOUTIQUE_LIST_ITEM = (By.CSS_SELECTOR, ".component-item")
     BOUTIQUE_ITEM_IMAGE_CONTAINER = (By.CSS_SELECTOR, ".image-container")
     BOUTIQUE_ITEM_IMAGE = (By.TAG_NAME, "img")
+    BOUTIQUE_TABS = (By.CSS_SELECTOR,".tab-link")
